@@ -3,7 +3,7 @@ import ij.process.*;
 import ij.plugin.*;
 import java.io.*;
 
-public class ImagePlugin implements PlugIn {
+public class ImagePluginimplements PlugIn {
 
     public void run(String arg) {
         int N = 543;
@@ -13,7 +13,7 @@ public class ImagePlugin implements PlugIn {
         binaryProcessor.fill();
 
         try {
-            String stuFilePath = "car-f-92.stu"; // Replace with the path to your .stu file
+            String stuFilePath = "car-f-92.stu"; 
             BufferedReader stuReader = new BufferedReader(new FileReader(stuFilePath));
             String line;
 
